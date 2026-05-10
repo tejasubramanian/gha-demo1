@@ -10,5 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Message
-        run: echo "Hello GitHub Actions"
+      - name: Hello Step
+        run: |
+        echo 'This is the line one'
+        echo 'This is the line two'
