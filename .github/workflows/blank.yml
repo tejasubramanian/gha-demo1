@@ -1,16 +1,18 @@
-name: First Workflow
-
-on:
-  push:
-    branches:
-      - main
-
+name: Hello World
+on: workflow_dispatch
 jobs:
-  hello:
+  build:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Build Step
+      run: echo "A demo buld"
+  test:
+     runs-on: ubuntu-latest
+     steps:
+      - name: Test Phase
+        run: echo "Running test cases"
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Hello Step
-        run:  |
-         echo 'This is the line one'
-         echo 'This is the line two'
+     - name: Deploy App
+       run: echo "Deploying the app"     
