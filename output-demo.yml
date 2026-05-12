@@ -1,7 +1,7 @@
 name : Outputs Demo
 on : push
 jobs:
-  job2:
+  job1:
    runs-on :ububtu-latest
    steps:
    - name: Step One
