@@ -2,7 +2,7 @@ name : Outputs Demo
 on : push
 jobs:
   job1:
-   runs-on :ububtu-latest
+   runs-on: ububtu-latest
    steps:
    - name: Step One
      id: step1
