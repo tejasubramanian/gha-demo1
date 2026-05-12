@@ -1,8 +1,10 @@
-name: Hello World
+name: Github actions Demo
 on: push
 jobs:
-  build:
+  action-demo:
    runs-on: ubuntu-latest
    steps:
-    - name: Build Step
-      run: echo "Hello, ${{ secrets.MY_SECERET_CODE }}"
+    - name: Checkout the code
+      uses: actions/checkout@v4
+     -name: Print index
+      run: cat
